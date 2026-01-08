@@ -1,0 +1,24 @@
+.noto-sans-<uniquifier > {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playfair-display-<uniquifier > {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1 {
+  font-family: Playfair Display, serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: Noto Sans, sans-serif;
+  font-weight: normal;
+}
