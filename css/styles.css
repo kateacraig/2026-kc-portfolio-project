@@ -13,12 +13,83 @@
   font-style: normal;
 }
 
-h1 {
-  font-family: Playfair Display, serif;
+:root {
+  --color-primary: #093879;
+  --color-secondary: rgb(17, 31, 46);
+  --color-background: #8cccdd;
+  --btn-color: rgba(9, 56, 121, 0.953);
+  --color-white: white;
+  --color-black: black;
+  --heading-font-family: Playfair Display, serif;
+  --default-font-family: Noto Sans, sans-serif;
+  --transition: all 0.2s ease-in-out;
+}
+
+body {
+  font-family: var(--default-font-family);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 p {
-  font-family: Noto Sans, sans-serif;
   font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hero-section {
+  background-color: var(--color-background);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-section h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  font-family: var(--default-font-family);
+  font-weight: normal;
+  margin-bottom: 30px;
+  line-height: 2;
+  color: var(--color-secondary);
+}
+
+.btn-branding {
+  border-radius: 7px;
+  background-color: var(--btn-color);
+  color: var(--color-white);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  transition: var(--transition);
+  border: var(--color-white) 1px solid;
+}
+
+.btn-branding:hover {
+  background-color: var(--color-white);
+  color: var(--btn-color);
+  border: var(--btn-color) 1px solid;
 }
