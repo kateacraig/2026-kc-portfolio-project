@@ -41,12 +41,28 @@ h6 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 64px;
+}
+
 p {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 a {
   cursor: pointer;
+}
+
+img {
+  border-radius: 7px;
+  border: var(--color-primary) 1px solid;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-section {
@@ -92,4 +108,128 @@ a {
   background-color: var(--color-white);
   color: var(--btn-color);
   border: var(--btn-color) 1px solid;
+}
+
+.btn-branding-outline {
+  border-radius: 7px;
+  color: var(--btn-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  transition: var(--transition);
+  border: var(--btn-color) 1px solid;
+}
+
+.btn-branding-outline:hover {
+  background-color: var(--btn-color);
+  color: var(--color-white);
+  border: var(--color-white) 1px solid;
+}
+
+.project-description-text p {
+  font-size: 28px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.image-column {
+  background-color: var(--color-background);
+}
+
+.project-description {
+  padding: 20px 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .hero-section p {
+    font-size: 24px;
+  }
+
+  .hero-section h1 {
+    font-size: 80px;
+  }
+
+  .hero-section h2 {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+
+  .project-description-text p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .hero-section {
+    padding: 70px 20px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  .hero-section h1 {
+    font-size: 64px;
+  }
+
+  .hero-section h2 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .project-description-text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .col-6 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .hero-section h2 {
+    font-size: 28px;
+  }
+
+  .hero-section p {
+    font-size: 22px;
+  }
+
+  .image-column {
+    display: none;
+  }
+
+  .project-description-column {
+    text-align: center;
+  }
 }
