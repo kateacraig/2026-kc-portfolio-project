@@ -101,6 +101,7 @@ img {
   font-size: 18px;
   line-height: 27px;
   transition: var(--transition);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
   border: var(--color-white) 1px solid;
 }
 
@@ -141,6 +142,28 @@ img {
   padding: 20px 20px;
 }
 
+.about-hero-section {
+  padding: 100px 20px;
+}
+
+.about-hero-content {
+  margin: 30px;
+}
+
+.about-hero-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-hero-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-hero-section p {
+  font-size: 20px;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 80px;
@@ -170,6 +193,11 @@ img {
   .project-description-text p {
     font-size: 24px;
     line-height: 1.5;
+  }
+
+  .about-hero-section {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -231,5 +259,9 @@ img {
 
   .project-description-column {
     text-align: center;
+  }
+  .about-hero-section h1 {
+    font-size: 62px;
+    line-height: 1.1;
   }
 }
