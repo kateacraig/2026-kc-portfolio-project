@@ -188,6 +188,11 @@ img {
   line-height: 1.5;
 }
 
+.contact-image {
+  height: 100%;
+  width: 290px;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: var(--tablet-size);
@@ -281,6 +286,11 @@ img {
     max-width: 100%;
   }
 
+  .col-8 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
   .container {
     text-align: center;
   }
@@ -319,5 +329,9 @@ img {
 
   .portfolio h1 {
     font-size: 50px;
+  }
+
+  .contact-image {
+    display: none;
   }
 }
