@@ -32,17 +32,35 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+    <div class="container">
+      <nav>
+        <a href="/index.html">
+          <img
+            src="/images/logo.png"
+            alt="Kate Craig Consulting Logo"
+            class="logo-image"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html"> Home</a>
+          </li>
+          <li><a href="/about.html"> About</a></li>
+          <li class="active"><a href="/portfolio.html"> Portfolio</a></li>
+          <li><a href="/contact.html"> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="content-container container">
       <div class="content portfolio">
-        <h1 class="text-center mb-4">
-          Take a look at what I've been working on!
-        </h1>
+        <h1>Take a look at what I've been working on!</h1>
 
         <div class="row portfolio-row">
           <div class="col-6 p-4 portfolio-text image-shade">
-            <div>
+            <div class="dictionary-image add-background">
               <img
-                src="/images/dictionary-project.png"
+                src="/images/dictionary-application.png"
                 alt="Screenshot of Dictionary App Project"
                 class="image-fluid portfolio-image"
               />
@@ -58,7 +76,7 @@
             </div>
           </div>
 
-          <div class="col-6 p-4 portfolio-text image-shade">
+          <div class="col-6 p-4 portfolio-text image-shade weather-image">
             <img
               src="/images/weather-app.png"
               alt="Screenshot of Weather App Project"
@@ -74,7 +92,7 @@
           </div>
         </div>
         <div class="row portfolio-row">
-          <div class="col-6 p-4 portfolio-text image-shade">
+          <div class="col-6 p-4 portfolio-text image-shade world-clock">
             <img
               src="/images/world-clock-project.png"
               alt="Screenshot of World Clock Project App"
@@ -88,13 +106,15 @@
               </p>
             </div>
           </div>
-          <div class="col-6 p-4 image-shade portfolio-text image-shade">
+          <div class="col-6 p-4 image-shade portfolio-text">
             <div>
-              <img
-                src="/images/poem-generator.png"
-                alt="Screenshot of Poem Generator App Project"
-                class="image-fluid portfolio-image"
-              />
+              <div class="poem-image add-background">
+                <img
+                  src="/images/poem-application.png"
+                  alt="Screenshot of Poem Generator App Project"
+                  class="image-fluid portfolio-image"
+                />
+              </div>
               <div class="image-shade-text">
                 <h3 class="mt-4 text-center">Poem Generator Project</h3>
                 <p class="text-center text-muted">

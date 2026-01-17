@@ -15,7 +15,6 @@
 
 :root {
   --color-primary: #093879;
-  --color-secondary: rgb(17, 31, 46);
   --color-background: #8cccdd;
   --btn-color: rgba(9, 56, 121, 0.953);
   --color-white: white;
@@ -25,7 +24,7 @@
   --transition: all 0.2s ease-in-out;
   --full-size: 1200px;
   --tablet-size: 700px;
-  --mobile-size: 380px;
+  --mobile-size: 480px;
 }
 
 body {
@@ -66,17 +65,95 @@ img {
   height: 100%;
   display: block;
   margin: 0 auto;
-  background-color: var(--color-background);
+}
+
+.logo-image {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 80px;
+  height: auto;
+  margin: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+.dictionary-image img {
+  width: 400px;
+  height: auto;
+}
+
+.weather-image img {
+  width: 550px;
+  height: auto;
+}
+
+.poem-image img {
+  width: 550px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.world-clock img {
+  width: 500px;
+  height: auto;
 }
 
 .image-shade p {
   opacity: 0.9;
 }
 
+.add-background {
+  background: var(--color-background);
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+}
+
+li a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: all 100ms ease-in-out;
+}
+
+li:hover a {
+  color: var(--color-background);
+}
+
 .hero-section {
   background-color: var(--color-background);
   padding: 100px 20px;
   text-align: center;
+}
+
+li.active a {
+  font-weight: 900;
+  color: var(--color-primary);
 }
 
 .hero-section p {
@@ -147,16 +224,16 @@ img {
 }
 
 .content-container {
-  padding: 100px 20px;
-}
-
-.content-container {
-  margin: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .content h1 {
   font-size: 64px;
   line-height: 80px;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .content h2 {
@@ -170,7 +247,7 @@ img {
 }
 
 .portfolio-row {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .portfolio-image {
@@ -191,6 +268,12 @@ img {
 .contact-image {
   height: 100%;
   width: 290px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: var(--full-size);
+  }
 }
 
 @media (max-width: 768px) {
@@ -259,8 +342,21 @@ img {
     font-size: 18px;
   }
 
+  .logo-image {
+    width: 50px;
+  }
+
+  nav li {
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .hero-section {
-    padding: 70px 20px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .hero-section p {
@@ -303,8 +399,12 @@ img {
     font-size: 22px;
   }
 
-  .image-column {
+  .image-shade {
     display: none;
+  }
+
+  .text-center {
+    margin: 0;
   }
 
   .project-description-column {
@@ -321,10 +421,6 @@ img {
 
   .portfolio-row {
     margin-bottom: 0;
-  }
-
-  .image-shade {
-    margin-bottom: 30px;
   }
 
   .portfolio h1 {
