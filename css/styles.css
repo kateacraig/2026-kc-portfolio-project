@@ -23,7 +23,7 @@
   --default-font-family: Noto Sans, sans-serif;
   --transition: all 0.2s ease-in-out;
   --full-size: 1200px;
-  --tablet-size: 700px;
+  --tablet-size: 10240px;
   --mobile-size: 480px;
 }
 
@@ -389,16 +389,28 @@ footer {
   }
 
   .content-container {
-    padding: 0;
     text-align: center;
+  }
+
+  .about-content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .image-shade img {
+    padding: 0;
+  }
+
+  .portfolio-image {
+    width: 350px;
   }
 
   .porfolio-row {
     margin-bottom: -100px;
   }
 
-  .col-6 {
-    padding: 40px;
+  .about-text {
+    padding: 40px 30px;
   }
 }
 
@@ -408,7 +420,7 @@ footer {
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 43px;
   }
 
   h2 {
@@ -468,16 +480,12 @@ footer {
     text-align: center;
   }
 
-  .hero-section h2 {
-    font-size: 28px;
-  }
-
   .hero-section p {
     font-size: 22px;
   }
 
-  .image-shade {
-    display: none;
+  .image-shade img {
+    width: 350px;
   }
 
   .text-center {
@@ -487,9 +495,15 @@ footer {
   .project-description-column {
     text-align: center;
   }
+
   .content-container h1 {
-    font-size: 62px;
+    font-size: 60px;
     line-height: 1.1;
+  }
+
+  .content-container h2 {
+    font-size: 24px;
+    padding: 10px;
   }
 
   .about-btn {
@@ -501,7 +515,8 @@ footer {
   }
 
   .portfolio h1 {
-    font-size: 50px;
+    font-size: 43px;
+    padding: 10px;
   }
 
   .contact-image {
@@ -514,11 +529,20 @@ footer {
     display: inline;
   }
 
+  .contact-content-header h1 {
+    font-size: 43px;
+  }
+
   .contact-box-text h4 {
     font-size: 30px;
   }
 
   .btn-footer {
     margin-top: 30px;
+  }
+
+  .add-background {
+    background: none;
+    padding: 0;
   }
 }
