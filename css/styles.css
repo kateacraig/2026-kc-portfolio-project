@@ -23,7 +23,7 @@
   --default-font-family: Noto Sans, sans-serif;
   --transition: all 0.2s ease-in-out;
   --full-size: 1200px;
-  --tablet-size: 10240px;
+  --tablet-size: 768px;
   --mobile-size: 480px;
 }
 
@@ -65,8 +65,8 @@ img {
   border-radius: 7px;
   border: var(--color-primary) 1px solid;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.3);
-  width: 400px;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -110,6 +110,18 @@ img {
 }
 
 .add-background {
+  background: var(--color-background);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.add-background-portfolio {
+  background: var(--color-background);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.add-background-footer {
   background: var(--color-background);
   padding: 15px;
   border-radius: 6px;
@@ -255,16 +267,6 @@ li.active a {
   margin-bottom: 40px;
 }
 
-.portfolio-image {
-  width: 400px;
-  height: 100%;
-}
-
-.portfolio-image-long {
-  width: 400px;
-  height: 100%;
-}
-
 .portfolio-text p {
   font-size: 14px;
   line-height: 1.5;
@@ -349,7 +351,16 @@ footer {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: var(--full-size);
+    max-width: 100%;
+  }
+
+  .dictionary-image img,
+  .weather-image img,
+  .poem-image img,
+  .world-clock img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -397,20 +408,27 @@ footer {
     margin: 0 auto;
   }
 
-  .image-shade img {
+  .add-background-portfolio {
     padding: 0;
+    background-color: none;
   }
 
-  .portfolio-image {
-    width: 350px;
+  .image-shade img {
+    padding: 0;
   }
 
   .porfolio-row {
     margin-bottom: -100px;
   }
 
-  .about-text {
-    padding: 40px 30px;
+  .col-6 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .col-8 {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 
@@ -539,6 +557,11 @@ footer {
 
   .btn-footer {
     margin-top: 30px;
+  }
+
+  .add-background-portfolio {
+    background: none;
+    padding: 0;
   }
 
   .add-background {
