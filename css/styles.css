@@ -33,6 +33,10 @@ body {
   padding: 0;
 }
 
+.container {
+  max-width: 1300px;
+}
+
 h1,
 h2,
 h3,
@@ -108,6 +112,7 @@ img {
 .add-background {
   background: var(--color-background);
   padding: 15px;
+  border-radius: 6px;
 }
 
 nav {
@@ -270,6 +275,78 @@ li.active a {
   width: 290px;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 120px 30px 120px;
+}
+
+.footer-background {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-box-text {
+  display: inline;
+}
+
+.contact-box-text h4 {
+  font-size: 48px;
+}
+
+.contact-box-text p {
+  opacity: 0.6;
+  margin: 0;
+}
+
+.footer-email {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-email a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 24px;
+  transition: all 100ms ease-in-out;
+}
+
+.footer-email:hover a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 0 20px;
+  padding: 5px 10px;
+  color: var(--color-primary);
+  font-size: 24px;
+  background-color: var(--color-background);
+  border-radius: 100px;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: var(--color-background);
+  background-color: var(--color-primary);
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: var(--full-size);
@@ -429,5 +506,19 @@ li.active a {
 
   .contact-image {
     display: none;
+  }
+
+  .contact-box {
+    padding: 30px;
+    background-color: none;
+    display: inline;
+  }
+
+  .contact-box-text h4 {
+    font-size: 30px;
+  }
+
+  .btn-footer {
+    margin-top: 30px;
   }
 }
