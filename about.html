@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kate Craig Portfolio Project About Page"
+      content="About Kate. Kate Craig is a front-end engineer based in the United States, in Johnson City, TN. She specializes in HTML, CSS, JavaScript, and Python."
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -28,7 +28,9 @@
       src="https://kit.fontawesome.com/c95030a0b6.js"
       crossorigin="anonymous"
     ></script>
-    <title>About - Kate Craig Portfolio Project</title>
+    <title>
+      About Kate - Front-end developer - Kate Craig Portfolio Project
+    </title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -37,17 +39,22 @@
         <a href="/index.html">
           <img
             src="/images/logo.png"
+            title="Homepage"
             alt="Kate Craig Consulting Logo"
             class="logo-image"
           />
         </a>
         <ul>
           <li>
-            <a href="/index.html"> Home</a>
+            <a href="/index.html" title="Homepage"> Home</a>
           </li>
-          <li class="active"><a href="/about.html"> About</a></li>
-          <li><a href="/portfolio.html"> Portfolio</a></li>
-          <li><a href="/contact.html"> Contact</a></li>
+          <li class="active">
+            <a href="/about.html" title="About Page"> About</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" title="Portfolio Page"> Portfolio</a>
+          </li>
+          <li><a href="/contact.html" title="Contact Page"> Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -86,12 +93,15 @@
     <div class="add-background-footer footer-background">
       <div class="contact-box footer-container">
         <div class="contact-box-text">
-          <h4>Work Inquiry</h4>
+          <h3>Work Inquiry</h3>
           <p>Let's work together</p>
         </div>
         <div>
-          <a href="/contact.hmtl" class="btn btn-branding btn-footer"
-            >Contact Kate</a
+          <a
+            href="/contact.html"
+            title="Contact Kate"
+            class="btn btn-branding btn-footer"
+            >Contact me</a
           >
         </div>
       </div>
@@ -100,15 +110,33 @@
       <a href="mailto:kate.a.craig@gmail.com">kate.a.craig@gmail.com</a>
     </div>
     <div class="social-links">
-      <a href="https://www.facebook.com/KateCraigTN" target="_blank"
+      <a
+        href="https://www.facebook.com/KateCraigTN"
+        title="Facebook Profile"
+        target="_blank"
         ><i class="fa-brands fa-facebook social-icon"></i
       ></a>
-      <a href="https://www.instagram.com/katecraigtn/" target="_blank"
+      <a
+        href="https://www.instagram.com/katecraigtn/"
+        title="Instagram Profile"
+        target="_blank"
         ><i class="fa-brands fa-instagram social-icon"></i
       ></a>
-      <a href="https://github.com/kateacraig" target="_blank"
+      <a
+        href="https://github.com/kateacraig"
+        title="GitHub Profile"
+        target="_blank"
         ><i class="fa-brands fa-github social-icon"></i
       ></a>
     </div>
+    <p class="text-center mt-5">
+      👨‍💻 This project was coded by Kate Craig and is open-sourced on
+      <a
+        href="https://github.com/kateacraig/2026-kc-portfolio-project"
+        title="Kate's GitHub Project Page"
+        target="_blank"
+        >GitHub</a
+      >.>
+    </p>
   </footer>
 </html>
